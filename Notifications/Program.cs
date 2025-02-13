@@ -25,7 +25,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-var app = builder.Build();
 app.UseCors(cors => cors.AllowAnyHeader()   // Allow any headers in the request
             .AllowAnyMethod()       // Allow any HTTP method (GET, POST, PUT, DELETE, etc.)
             .AllowAnyOrigin());     // Allow requests from any origin
@@ -40,7 +39,7 @@ else
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Notifications API V1");
         c.RoutePrefix = string.Empty; // Set Swagger UI at the app's root
     });
 }
