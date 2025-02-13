@@ -1,0 +1,28 @@
+﻿@Notifications_HostAddress = http://localhost:5299
+
+GET {{Notifications_HostAddress}}/Email/
+Accept: application/json
+
+###
+
+# 📦 Notifications (Root Project)
+#  ┣ 📂 Core                 --> (Contains Business Logic)
+#  ┃ ┣ 📜 EmailService.cs
+#  ┃ ┣ 📜 EmailTemplateService.cs
+#  ┣ 📂 Domain               --> (Entities and Contracts)
+#  ┃ ┣ 📜 EmailRequest.cs
+#  ┃ ┣ 📜 EmailRequestDto.cs
+#  ┃ ┣ 📜 EmailTemplatePlaceholder.cs
+#  ┃ ┣ 📜 SmtpSettings.cs
+#  ┣ 📂 Application          --> (Interfaces / Contracts)
+#  ┃ ┣ 📜 IEmailService.cs
+#  ┃ ┣ 📜 IEmailTemplateService.cs
+#  ┃ ┣ 📜 IEmailClient.cs
+#  ┃ ┣ 📜 IContactDetails.cs
+#  ┣ 📂 Infrastructure       --> (External Dependencies)
+#  ┃ ┣ 📜 EmailClient.cs     --> (Client Implementation)
+#  ┣ 📂 API                  --> (Controllers and Endpoints)
+#  ┃ ┣ 📜 EmailController.cs
+#  ┣ 📜 appsettings.json
+#  ┣ 📜 Notifications.http
+#  ┣ 📜 Program.cs

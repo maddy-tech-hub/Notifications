@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "Notifications.API.EmailController",
+    "Method": "SendContactEmail",
+    "RelativePath": "api/email/send-contact-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailRequestDto",
+        "Type": "Notifications.Domain.EmailRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
