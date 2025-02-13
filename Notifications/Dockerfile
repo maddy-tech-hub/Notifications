@@ -4,7 +4,7 @@ WORKDIR /src
 
 # Copy everything and build
 COPY . .
-RUN dotnet publish ECommerceWebApi.csproj -c Release -o /app
+RUN dotnet publish Notifications.csproj -c Release -o /app
 
 # Runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
