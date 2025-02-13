@@ -27,10 +27,10 @@ D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\staticwebassets\m
 D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Notifications.props
 D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Notifications.props
 D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\staticwebassets.pack.json
-D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\Notifica.A40DC325.Up2Date
 D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\Notifications.dll
 D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\refint\Notifications.dll
 D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\Notifications.pdb
 D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\Notifications.genruntimeconfig.cache
 D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\ref\Notifications.dll
+D:\DotNetProjects\Notifications\Notifications\obj\Debug\net8.0\Notifications.sourcelink.json
