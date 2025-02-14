@@ -1,15 +1,11 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Notifications.Application;
 using Notifications.Core;
 using Notifications.Domain;
 using Notifications.Infrastructure;
-using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Load SmtpSettings from appsettings.json
+// Load settings
 var smtpSettings = builder.Configuration.GetSection("SmtpSettings").Get<SmtpSettings>();
 var emailTemplates = builder.Configuration.GetSection("EmailTemplates").Get<Dictionary<string, EmailTemplate>>();
 
@@ -24,10 +20,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// CORS setup (before authentication but after HTTPS redirection)
 var app = builder.Build();
-app.UseCors(cors => cors.AllowAnyHeader()   // Allow any headers in the request
-            .AllowAnyMethod()       // Allow any HTTP method (GET, POST, PUT, DELETE, etc.)
-            .AllowAnyOrigin());     // Allow requests from any origin
+
+// Ensure HTTPS redirection
+app.UseHttpsRedirection();
+
+// Enable CORS
+app.UseCors(cors => cors.AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowAnyOrigin());
 
 if (app.Environment.IsDevelopment())
 {
@@ -40,10 +42,9 @@ else
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Notifications API V1");
-        c.RoutePrefix = string.Empty; // Set Swagger UI at the app's root
+        c.RoutePrefix = string.Empty; // Set Swagger UI at the root
     });
 }
-app.UseHttpsRedirection();
 
 // Enable authentication and authorization
 app.UseAuthentication();

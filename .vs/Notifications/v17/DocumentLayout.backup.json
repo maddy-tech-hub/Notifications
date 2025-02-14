@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\DotNetProjects\\Notifications\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|d:\\dotnetprojects\\notifications\\notifications\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|solutionrelative:notifications\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|d:\\dotnetprojects\\notifications\\notifications\\infrastructure\\emailclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|solutionrelative:notifications\\infrastructure\\emailclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|d:\\dotnetprojects\\notifications\\notifications\\core\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|solutionrelative:notifications\\core\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|d:\\dotnetprojects\\notifications\\notifications\\api\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|solutionrelative:notifications\\api\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|d:\\dotnetprojects\\notifications\\notifications\\infrastructure\\emailclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|solutionrelative:notifications\\infrastructure\\emailclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|d:\\dotnetprojects\\notifications\\notifications\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|solutionrelative:notifications\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08D18805-1D43-44C1-A307-910AA30DC565}|Notifications\\Notifications.csproj|d:\\dotnetprojects\\notifications\\notifications\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,17 +70,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\DotNetProjects\\Notifications\\Notifications\\appsettings.json",
               "RelativeDocumentMoniker": "Notifications\\appsettings.json",
               "ToolTip": "D:\\DotNetProjects\\Notifications\\Notifications\\appsettings.json",
               "RelativeToolTip": "Notifications\\appsettings.json",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvxkAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvxMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-13T02:25:50.652Z",
               "EditorCaption": ""
@@ -113,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "EmailController.cs",
               "DocumentMoniker": "D:\\DotNetProjects\\Notifications\\Notifications\\API\\EmailController.cs",
               "RelativeDocumentMoniker": "Notifications\\API\\EmailController.cs",
@@ -126,26 +126,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "EmailService.cs",
               "DocumentMoniker": "D:\\DotNetProjects\\Notifications\\Notifications\\Core\\EmailService.cs",
               "RelativeDocumentMoniker": "Notifications\\Core\\EmailService.cs",
               "ToolTip": "D:\\DotNetProjects\\Notifications\\Notifications\\Core\\EmailService.cs",
               "RelativeToolTip": "Notifications\\Core\\EmailService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAQwCoAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAlwBcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T02:52:55.61Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EmailClient.cs",
               "DocumentMoniker": "D:\\DotNetProjects\\Notifications\\Notifications\\Infrastructure\\EmailClient.cs",
               "RelativeDocumentMoniker": "Notifications\\Infrastructure\\EmailClient.cs",
               "ToolTip": "D:\\DotNetProjects\\Notifications\\Notifications\\Infrastructure\\EmailClient.cs",
               "RelativeToolTip": "Notifications\\Infrastructure\\EmailClient.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAlwCEAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T02:49:15.749Z",
               "EditorCaption": ""
