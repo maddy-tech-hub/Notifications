@@ -9,8 +9,9 @@
     }
     public class EmailTemplate
     {
-        public string Subject { get; set; }
-        public string Message { get; set; }
-        public string HtmlBody { get; set; }
+        public string Subject { get; set; } = string.Empty;
+        public string Message { get; set; } = string.Empty;
+        public string HtmlBody { get; set; } = string.Empty;
     }
+
 }
