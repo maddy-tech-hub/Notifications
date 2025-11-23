@@ -16,6 +16,12 @@ namespace Notifications.API
             _emailService = emailService;
         }
 
+         [HttpGet("sent")]
+        public async Task<IActionResult> Sent()
+        {
+                return Ok(new { message = "Email sent successfully." });
+        }
+
         [HttpPost("send-contact-email")]
         public async Task<IActionResult> SendContactEmail([FromBody] EmailRequestDto emailRequestDto)
         {

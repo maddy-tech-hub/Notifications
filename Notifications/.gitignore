@@ -1,0 +1,99 @@
+# Build folders
+bin/
+obj/
+out/
+
+# Visual Studio cache / files
+.vs/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / VS Code
+.idea/
+*.iml
+.vscode/
+
+# .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Logs
+*.log
+*.tlog
+
+# Transient files
+*.tmp
+*.temp
+*.tmp*
+*.svclog
+
+# IIS / Web
+_IISExpress/
+iisexpress/
+*.publishsettings
+
+# Publish output
+publish/
+*.pubxml
+*.pubxml.user
+
+# Azure
+*.azurePubxml
+Dump/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Resharper / JetBrains
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+# ASP.NET scaffolding
+ScaffoldingReadMe.txt
+
+# Entity Framework
+Migrations/obj/
+
+# SQLite / local DB
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+
+# Env files (optional, if you use environment secrets)
+*.env
+.env*
+
+# Rider / mono
+mono_crash.*
+
+# Backup files
+*.bak
+*.orig
+*.old
+
+# Others
+node_modules/
+wwwroot/lib/
+
+*.nuget.props
+*.nuget.targets
+

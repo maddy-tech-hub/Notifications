@@ -6,8 +6,13 @@ using Notifications.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 
 // Load settings
-var smtpSettings = builder.Configuration.GetSection("SmtpSettings").Get<SmtpSettings>();
-var emailTemplates = builder.Configuration.GetSection("EmailTemplates").Get<Dictionary<string, EmailTemplate>>();
+var smtpSettings = builder.Configuration
+    .GetSection("SmtpSettings")
+    .Get<SmtpSettings>() ?? throw new InvalidOperationException("SmtpSettings section is missing.");
+
+var emailTemplates = builder.Configuration
+    .GetSection("EmailTemplates")
+    .Get<Dictionary<string, EmailTemplate>>() ?? new Dictionary<string, EmailTemplate>();
 
 builder.Services.AddSingleton(smtpSettings);
 builder.Services.AddSingleton(emailTemplates);
