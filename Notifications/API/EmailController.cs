@@ -16,10 +16,21 @@ namespace Notifications.API
             _emailService = emailService;
         }
 
-         [HttpGet("sent")]
-        public async Task<IActionResult> Sent()
+        [HttpGet("diag/smtp")]
+        public async Task<IActionResult> TestSmtp()
         {
-                return Ok(new { message = "Email sent successfully." });
+            try
+            {
+                using var tcp = new TcpClient();
+                var task = tcp.ConnectAsync("smtp-relay.brevo.com", 2525);
+                if (!task.Wait(TimeSpan.FromSeconds(5)))
+                    return StatusCode(500, "Port blocked or timed out");
+                return Ok("Port 2525 is OPEN");
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
         }
 
         [HttpPost("send-contact-email")]
