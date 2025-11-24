@@ -22,7 +22,10 @@ namespace Notifications.Infrastructure
             {
                 using (var client = new SmtpClient(_smtpSettings.Host, _smtpSettings.Port))
                 {
-                    client.Credentials = new NetworkCredential(_smtpSettings.Username, _smtpSettings.Password);
+                    var smtpPassword = string.IsNullOrWhiteSpace(_smtpSettings.Password)
+                        ? Environment.GetEnvironmentVariable("BREVO_SMTP_KEY")
+                        : _smtpSettings.Password;
+                    client.Credentials = new NetworkCredential(_smtpSettings.Username, smtpPassword);
                     client.EnableSsl = _smtpSettings.EnableSsl;
 
                     var mailMessage = new MailMessage
