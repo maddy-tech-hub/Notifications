@@ -46,7 +46,7 @@ namespace Notifications.Core
             var thankYouEmail = new EmailRequest
             {
                 ToEmail = emailRequestDto.Email,
-                Subject = thankYouTemplate.Subject,
+                Subject = thankYouTemplate.Subject.Replace("{TeamName}", "Maddy Tech"),
                 Body = thankYouTemplate.HtmlBody
                     .Replace("{FullName}", emailRequestDto.FullName)
                     .Replace("{TeamName}", "Maddy Tech"),
