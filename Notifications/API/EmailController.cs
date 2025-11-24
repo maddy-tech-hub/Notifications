@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Notifications.Application;
 using Notifications.Domain;
+using System.Net.Sockets;
 using System.Threading.Tasks;
 
 namespace Notifications.API
